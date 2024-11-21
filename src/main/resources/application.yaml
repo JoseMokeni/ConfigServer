@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: MSConfiguration
+  profiles:
+    active:
+      - git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JoseMokeni/MSConfigurationTP.git
+          clone-on-start: true
+server:
+  port: 8888
+encrypt:
+  key: mykey
